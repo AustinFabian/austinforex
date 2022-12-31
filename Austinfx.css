@@ -1,63 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
-.maxwidth{
+.maxwidth {
   max-width: 1300px;
   padding: 0 80px;
   margin: auto;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
 /* navbar styling begins */
 
-.navbar, .navbarr{
+.navbar,
+.navbarr {
   position: fixed;
   width: 100%;
   padding: 30px 0;
   z-index: 999;
   /* background: #d12e57; */
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   transition: all 0.3s ease;
 }
 
-.navbarr{
+.navbarr {
   background: #333;
 }
 
-.sticky{
+.sticky {
   padding: 15px 0;
   background: #d12e57;
 }
-.navbar .maxwidth, .navbarr .maxwidth{
+.navbar .maxwidth,
+.navbarr .maxwidth {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.navbar .logo p, .navbarr .logo p{
+.navbar .logo p,
+.navbarr .logo p {
   color: #fff;
   font-size: 35px;
   font-weight: 600px;
 }
-.navbar .logo p span, .navbarr .logo p span{
+.navbar .logo p span,
+.navbarr .logo p span {
   color: #d12e57;
   transition: all 0.3s ease;
 }
-.navbar.sticky .logo p span{
+.navbar.sticky .logo p span {
   color: #10153f;
 }
-.navbar .menu li, .navbarr .menu li{
+.navbar .menu li,
+.navbarr .menu li {
   list-style: none;
   display: inline-block;
 }
-.navbar .menu li a, .navbarr .menu li a{
+.navbar .menu li a,
+.navbarr .menu li a {
   display: block;
   color: #fff;
   font-size: 18px;
@@ -66,20 +72,21 @@ html{
   transition: color 0.3s ease;
 }
 
-.navbar .menu li a:hover, .navbarr .menu li a:hover{
+.navbar .menu li a:hover,
+.navbarr .menu li a:hover {
   color: #d12e57;
 }
-.navbar.sticky .menu li a{
+.navbar.sticky .menu li a {
   color: #fff;
   transition: color 0.5s ease;
 }
-.navbar.sticky .menu li a:hover{
+.navbar.sticky .menu li a:hover {
   color: lightgrey;
 }
 
 /* menubtn styling */
 
-.menubtn{
+.menubtn {
   color: #fff;
   font-size: 23px;
   cursor: pointer;
@@ -88,50 +95,48 @@ html{
 
 /* home section styling */
 
-.home{
+.home {
   height: 100vh;
   display: flex;
   color: #fff;
   min-height: 500px;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
   background-image: url(media/IMG_1212.jpg);
   background-size: cover;
   background-position: center;
 }
 
-
-
-.home .maxwidth{
+.home .maxwidth {
   max-width: auto 0 auto 40px;
 }
-.home .homecontent .text1{
+.home .homecontent .text1 {
   font-size: 75px;
   font-weight: 600;
   margin-left: -3px;
 }
-.home .homecontent .text2{
+.home .homecontent .text2 {
   font-size: 40px;
   margin: 5px 0;
 }
 
-.home .homecontent .text2 span{
+.home .homecontent .text2 span {
   color: #d12e57;
   font-weight: 500px;
 }
 /* All Similar Content styling Code */
-section{
+section {
   padding: 100px 0;
 }
-section .title{
+section .title {
   position: relative;
   font-size: 40px;
   font-weight: 500px;
   margin-bottom: 60px;
   padding-bottom: 20px;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
-section .title::before{
+section .title::before {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -141,7 +146,7 @@ section .title::before{
   background-color: #d12e57;
   transform: translateX(-50%);
 }
-section .title::after{
+section .title::after {
   position: absolute;
   bottom: -12px;
   left: 50%;
@@ -151,44 +156,55 @@ section .title::after{
   transform: translateX(-50%);
 }
 /* about section styling */
-.about, .services, .broker, .contact, .reviews, .tutorial, .signal, footer{
-  font-family: 'poppins', sans-serif;
+.about,
+.services,
+.broker,
+.contact,
+.reviews,
+.tutorial,
+.signal,
+footer {
+  font-family: "poppins", sans-serif;
 }
-.about .title::after{
+.about .title::after {
   content: "who we are";
-  font-family: 'Fredoka', sans-serif;
-
+  font-family: "Fredoka", sans-serif;
 }
-.about .aboutcontent, .services .servcontent, .broker .brokercontent, .contact .contactcontent, .tutorial .tutorialcontent, .signal .signalcontent{
+.about .aboutcontent,
+.services .servcontent,
+.broker .brokercontent,
+.contact .contactcontent,
+.tutorial .tutorialcontent,
+.signal .signalcontent {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.about .aboutcontent .left{
+.about .aboutcontent .left {
   width: 45%;
 }
-.about .aboutcontent .left img{
+.about .aboutcontent .left img {
   width: 400px;
   height: 400px;
   object-fit: cover;
   border-radius: 6px;
 }
-.about .aboutcontent .right{
+.about .aboutcontent .right {
   width: 55%;
 }
-.about .aboutcontent .right .text{
+.about .aboutcontent .right .text {
   font-size: 25px;
   font-weight: 600;
   margin-bottom: 10px;
 }
-.about .aboutcontent .right .text a{
-  color:  #d12e57;
+.about .aboutcontent .right .text a {
+  color: #d12e57;
 }
-.about .aboutcontent .right p{
+.about .aboutcontent .right p {
   text-align: justify;
 }
-.enroll{
+.enroll {
   display: inline-block;
   background-color: #d12e57;
   color: white;
@@ -199,28 +215,28 @@ section .title::after{
   font-weight: 500;
   padding: 1px 30px;
   border: 2px solid #d12e57;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
 }
-.enroll:hover{
+.enroll:hover {
   background: none;
   color: #d12e57;
 }
 /* Services styling starts here */
-.services{
+.services {
   background-color: #111;
   color: #fff;
 }
-.services .title::before{
+.services .title::before {
   background: #fff;
 }
-.services .title::after{
+.services .title::after {
   background: #111;
   content: "Join,Trade,Be..";
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-size: 18px;
   color: #d12e57;
 }
-.services .servcontent .card{
+.services .servcontent .card {
   width: calc(33% - 20px);
   background: #222;
   text-align: center;
@@ -230,55 +246,55 @@ section .title::after{
   transition: all 0.3s ease;
   color: #fff;
 }
-.services .servcontent .card:hover{
+.services .servcontent .card:hover {
   background: #d12e57;
 }
-.services .servcontent .card .box{
+.services .servcontent .card .box {
   transition: all 0.3s ease;
 }
-.services .servcontent .card:hover .box{
+.services .servcontent .card:hover .box {
   transform: scale(1.05);
 }
-.services .servcontent .card i{
+.services .servcontent .card i {
   font-size: 50px;
   color: #d12e57;
 }
-.services .servcontent .card:hover i{
+.services .servcontent .card:hover i {
   color: #fff;
 }
-.services .servcontent .card .text{
+.services .servcontent .card .text {
   font-size: 25px;
   font-weight: 500px;
   margin: 10px 0 7px 0;
 }
 
-.dollar{
+.dollar {
   font-weight: 700;
 }
 
 /* Broker styling starts here */
 
-.broker .title::after{
+.broker .title::after {
   content: "Simple and reliable";
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   font-size: 15px;
 }
 
-.broker .brokercontent .column{
+.broker .brokercontent .column {
   width: calc(50% - 30px);
 }
 
-.broker .brokercontent .left .text{
+.broker .brokercontent .left .text {
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-.broker .brokercontent .left p{
+.broker .brokercontent .left p {
   text-align: justify;
 }
 
-.broker .brokercontent .left a{
+.broker .brokercontent .left a {
   display: inline-block;
   background-color: #d12e57;
   color: white;
@@ -289,43 +305,43 @@ section .title::after{
   font-weight: 500;
   padding: 1px 30px;
   border: 2px solid #d12e57;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
 }
 
-.broker .brokercontent .left a:hover{
+.broker .brokercontent .left a:hover {
   background: none;
   color: #d12e57;
 }
 
-.brokercontent .right .text{
+.brokercontent .right .text {
   font-size: 30px;
   font-weight: 600;
 }
 
-.broker .brokercontent .right .bars{
+.broker .brokercontent .right .bars {
   margin-bottom: 15px;
 }
 
-.broker .brokercontent .right .info{
+.broker .brokercontent .right .info {
   display: flex;
   margin-bottom: 5px;
   align-items: center;
   justify-content: space-between;
 }
 
-.broker .brokercontent .right span{
+.broker .brokercontent .right span {
   font-size: 18px;
   font-weight: 400;
 }
 
-.broker .brokercontent .right .line{
+.broker .brokercontent .right .line {
   height: 5px;
   width: 100%;
   background: lightgrey;
-    position: relative;
+  position: relative;
 }
 
-.broker .brokercontent .right .line::before{
+.broker .brokercontent .right .line::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -335,7 +351,7 @@ section .title::after{
   background-color: #d12e57;
 }
 
-.broker .brokercontent .right .rel::before{
+.broker .brokercontent .right .rel::before {
   content: "";
   position: absolute;
   height: 100%;
@@ -347,104 +363,105 @@ section .title::after{
 
 /* contact section starts here */
 
-.contact{
+.contact {
   background: #111;
 }
 
-.contact .title::after{
+.contact .title::after {
   content: "Get in Touch";
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: #d12e57;
   background: #111;
 }
 
-.contact .title::before{
+.contact .title::before {
   background: #fff;
 }
 
-.contact .title{
+.contact .title {
   color: #fff;
 }
 
-.contact .contactcontent .column{
+.contact .contactcontent .column {
   width: calc(50% - 30px);
 }
 
-.contact .contactcontent .text{
+.contact .contactcontent .text {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 10px;
   color: #fff;
 }
 
-.contact .contactcontent .left p{
+.contact .contactcontent .left p {
   text-align: justify;
   color: lightgrey;
 }
 
-.contact .contactcontent .left .icons{
+.contact .contactcontent .left .icons {
   margin: 10px 0;
 }
 
-.contact .contactcontent .row{
+.contact .contactcontent .row {
   display: flex;
   align-items: center;
   height: 65px;
 }
 
-.contact .contactcontent .row .info{
+.contact .contactcontent .row .info {
   margin-left: 30px;
 }
 
-.contact .contactcontent .row a i{
+.contact .contactcontent .row a i {
   font-size: 40px;
   color: #d12e57;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
 }
 
-.contact .contactcontent .row a i:hover{
+.contact .contactcontent .row a i:hover {
   color: lightgrey;
 }
 
-.contact .contactcontent .row i{
+.contact .contactcontent .row i {
   font-size: 25px;
   color: lightgrey;
 }
 
-.contact .contactcontent .info .head{
+.contact .contactcontent .info .head {
   font-weight: 500;
   color: #fff;
 }
 
-.contact .contactcontent .info .Subtitle{
+.contact .contactcontent .info .Subtitle {
   color: lightgrey;
 }
 
-
-.contact .right form .fields{
+.contact .right form .fields {
   display: flex;
 }
 
-.contact .right form .field, .contact .right form .fields .field{
+.contact .right form .field,
+.contact .right form .fields .field {
   height: 45px;
   width: 100%;
   margin-bottom: 15px;
 }
 
-.contact .right form .textarea{
+.contact .right form .textarea {
   height: 80px;
   width: 100%;
 }
 
-.contact .right form .name{
+.contact .right form .name {
   margin-right: 10px;
 }
 
-.contact .right form .email{
+.contact .right form .email {
   margin-left: 10px;
 }
 
-.contact .right form .field input, .contact .right form .textarea textarea{
+.contact .right form .field input,
+.contact .right form .textarea textarea {
   height: 100%;
   width: 100%;
   border: 3px solid lightgrey;
@@ -452,35 +469,35 @@ section .title::after{
   outline: none;
   padding: 10px 25px;
   font-size: 17px;
-  font-family: 'Poppins', sans-serif;
-  transition: .5s all ease;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s all ease;
 }
 
-.contact .right form .textarea textarea:hover{
+.contact .right form .textarea textarea:hover {
   border: 3px solid #d12e57;
 }
 
-.color{
+.color {
   color: #d12e57;
   font-stretch: ultra-condensed;
 }
 
-.contact .right form .field input:hover{
+.contact .right form .field input:hover {
   /* box-shadow: 50px 20px 50px 20px rgba(234,32,98,0.5); */
   border: 3px solid #d12e57;
 }
 
-.contact .right form .textarea textarea{
+.contact .right form .textarea textarea {
   padding-top: 10px;
   resize: none;
 }
 
-.contact .right form .button{
+.contact .right form .button {
   height: 47px;
   width: 170px;
 }
 
-.contact .right form .button button{
+.contact .right form .button button {
   height: 100%;
   width: 100%;
   border: 2px solid #d12e57;
@@ -489,49 +506,49 @@ section .title::after{
   font-size: 20px;
   font-weight: 500;
   border-radius: 6px;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
   cursor: pointer;
 }
 
-.contact .right form .button button:hover{
+.contact .right form .button button:hover {
   color: #d12e57;
   background: none;
 }
 
-#ph{
+#ph {
   margin-top: 10px;
 }
 
 /* reviews section styling */
 
-.reviews .title::before{
+.reviews .title::before {
   background: #111;
 }
 
-.reviews .title::after{
+.reviews .title::after {
   content: "see for yourself";
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
   color: #d12e57;
   font-size: 15px;
 }
 
-.reviews .carousel .card{
+.reviews .carousel .card {
   background: lightgrey;
   border-radius: 6px;
   padding: 25px 35px;
   transition: all 0.5s ease;
 }
 
-.reviews .carousel .card:hover{
+.reviews .carousel .card:hover {
   background: #d12e57;
   color: #fff;
 }
 
-.reviews .carousel .card:hover .box{
+.reviews .carousel .card:hover .box {
   transform: scale(1.05);
 }
 
-.reviews .carousel .card .box{
+.reviews .carousel .card .box {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -540,77 +557,77 @@ section .title::after{
   transition: all 0.5s ease;
 }
 
-.reviews .carousel .card .text{
+.reviews .carousel .card .text {
   font-size: 25px;
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
 
-.reviews .carousel .card img{
+.reviews .carousel .card img {
   height: 350px;
   width: 280px;
   object-fit: cover;
   border-radius: 3%;
-  border: 5px solid  #d12e57;
+  border: 5px solid #d12e57;
   transition: all 0.5s ease;
 }
 
-.reviews .carousel .card:hover img{
+.reviews .carousel .card:hover img {
   border-color: lightgrey;
 }
 
-.owl-dots{
+.owl-dots {
   text-align: center;
   margin-top: 20px;
 }
 
-.owl-dot{
+.owl-dot {
   height: 13px;
   width: 13px;
   margin: 0 5px;
-  outline: none!important;
+  outline: none !important;
   border-radius: 50%;
-  border: 2px solid #d12e57!important;
+  border: 2px solid #d12e57 !important;
 }
 
-.owl-dot.active{
+.owl-dot.active {
   width: 35px;
   border-radius: 14px;
 }
 
-.owl-dot.active, .owl-dot:hover{
-  background-color: #d12e57!important;
+.owl-dot.active,
+.owl-dot:hover {
+  background-color: #d12e57 !important;
 }
 
-.video{
+.video {
   height: 350px;
   width: 280px;
 }
 
 /* tutorial section starts here*/
 
-
-.tutorial .title{
-  font-family: 'Fredoka', sans-serif;
+.tutorial .title {
+  font-family: "Fredoka", sans-serif;
 }
 
-.tutorial .title::after{
+.tutorial .title::after {
   content: "Join Our Tutorial";
   font-size: 16px;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
-.text8{
+.text8 {
   font-size: 30px;
   font-weight: 700;
   border-bottom: 2px solid #999999;
 }
 
-.text8 span{
+.text8 span {
   font-size: 20px;
 }
 
-.text5{
+.text5 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -621,18 +638,19 @@ section .title::after{
   color: #fff;
 }
 
-.tutorial .tutorialcontent .column{
+.tutorial .tutorialcontent .column {
   width: calc(50% - 20px);
 }
 
-.online, .inclass{
+.online,
+.inclass {
   background: lightgrey;
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
 }
 
-.text3{
+.text3 {
   color: #999999;
   font-size: 50px;
   line-height: 20px;
@@ -640,30 +658,30 @@ section .title::after{
   font-weight: 700;
 }
 
-.span{
+.span {
   text-decoration: line-through;
 }
 
-.aspan2{
+.aspan2 {
   font-size: 20px;
   color: teal;
   font-weight: bold;
 }
 
-.img{
+.img {
   width: 15px;
 }
 
-.imgz{
+.imgz {
   width: 20px;
 }
 
-.ap5{
+.ap5 {
   font-size: 25px;
   font-weight: 700;
 }
 
-.aa1{
+.aa1 {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -673,21 +691,21 @@ section .title::after{
   background: #d12e57;
   color: #fff;
   border: 2px solid #d12e57;
-  transition: .5s all ease;
+  transition: 0.5s all ease;
   font-size: 20px;
   font-weight: 500;
 }
 
-.aa1:hover{
+.aa1:hover {
   background: none;
   color: #d12e57;
 }
 
-.tutorial .tutorialcontent .column table tbody{
+.tutorial .tutorialcontent .column table tbody {
   font-weight: 500;
 }
 
-.pay{
+.pay {
   padding: 10px;
   background: #d12e57;
   margin-top: 20px;
@@ -696,36 +714,36 @@ section .title::after{
   color: #fff;
 }
 
-footer span{
-  font-family: 'Fredoka', sans-serif;
+footer span {
+  font-family: "Fredoka", sans-serif;
 }
 
 /* Signal section statrs here  */
 
-.signal .title{
-  font-family: 'Fredoka', sans-serif;
+.signal .title {
+  font-family: "Fredoka", sans-serif;
 }
 
-.signal .title::after{
+.signal .title::after {
   content: "Join Our Signals";
   font-size: 16px;
-  font-family: 'Fredoka', sans-serif;
+  font-family: "Fredoka", sans-serif;
 }
 
-.signal .signalcontent .column{
+.signal .signalcontent .column {
   width: calc(50% - 20px);
 }
 
-.papa{
+.papa {
   color: #222;
   font-size: 30px;
   line-height: 20px;
 }
-.plaza{
+.plaza {
   font-size: 20px;
 }
 
-.gbp{
+.gbp {
   height: 308px;
   width: 300px;
   margin-top: 15px;
@@ -733,16 +751,16 @@ footer span{
   object-fit: cover;
   border-radius: 20px;
   border: 3px solid #d12e57;
-  transition: .5s;
+  transition: 0.5s;
 }
-.gbp:hover{
-transform: scale(1.05);
-border-color: #999;
+.gbp:hover {
+  transform: scale(1.05);
+  border-color: #999;
 }
 
 /* footer section starts here */
 
-footer{
+footer {
   background: #111;
   color: #fff;
   padding: 20px 23px;
@@ -752,27 +770,26 @@ footer{
   justify-content: center;
 }
 
-footer span a{
+footer span a {
   color: #d12e57;
   text-decoration: none;
 }
 
-footer span a:hover{
+footer span a:hover {
   text-decoration: underline;
 }
 
-.panda{
+.panda {
   color: #fff;
 }
 
-
 /* Scroll up button styling begins here */
-.scrollupbtn{
+.scrollupbtn {
   position: fixed;
   height: 45px;
   width: 50px;
   background: #d12e57;
-  right: 30px;
+  left: 30px;
   bottom: 0px;
   text-align: center;
   line-height: 45px;
@@ -786,49 +803,44 @@ footer span a:hover{
   transition: all 2s ease;
 }
 
-.scrollupbtn.show{
+.scrollupbtn.show {
   opacity: 9;
   pointer-events: auto;
-  bottom: 30px;
+  bottom: 40px;
 }
 
-
-
-
-
-
 /* responsive media query start here */
-@media(max-width:1396px){
-  .home .maxwidth{
+@media (max-width: 1396px) {
+  .home .maxwidth {
     margin-left: 0px;
   }
 }
 
-@media(max-width:1200px){
-  .about .aboutcontent .left img{
+@media (max-width: 1200px) {
+  .about .aboutcontent .left img {
     width: 350px;
     height: 350px;
   }
 }
 
-@media(max-width:1092px){
-  .maxwidth{
+@media (max-width: 1092px) {
+  .maxwidth {
     padding: 0 50px;
   }
 }
 
-@media(max-width:1048px){
-  .maxwidth{
+@media (max-width: 1048px) {
+  .maxwidth {
     padding: 0 50px;
   }
-  .menubtn{
+  .menubtn {
     display: block;
     z-index: 999;
   }
-  .menubtn i.active:before{
+  .menubtn i.active:before {
     content: "\f00d";
   }
-  .navbar .menu{
+  .navbar .menu {
     position: fixed;
     height: 100vh;
     width: 100%;
@@ -837,51 +849,51 @@ footer span a:hover{
     background-color: #111;
     text-align: center;
     padding-top: 80px;
-    transition: .5s ease;
+    transition: 0.5s ease;
   }
-  .navbar .menu.active{
+  .navbar .menu.active {
     left: 0;
   }
-  .navbar .menu li{
+  .navbar .menu li {
     display: block;
   }
-  .navbar .menu li a{
+  .navbar .menu li a {
     display: inline-block;
     margin: 20px 0;
     font-size: 25px;
   }
-  .home .homecontent .text1{
+  .home .homecontent .text1 {
     font-size: 70px;
   }
-  .home .homecontent .text2{
+  .home .homecontent .text2 {
     font-size: 35px;
   }
 }
-@media(max-width:950px){
-  .maxwidth{
+@media (max-width: 950px) {
+  .maxwidth {
     padding: 0 23px;
   }
-  .home .homecontent .text1{
+  .home .homecontent .text1 {
     font-size: 60px;
   }
-  .home .homecontent .text2{
+  .home .homecontent .text2 {
     font-size: 32px;
   }
-  .maxwidth{
+  .maxwidth {
     max-width: 800px;
   }
-  .about .aboutcontent .column{
+  .about .aboutcontent .column {
     width: 100%;
   }
-  .about .aboutcontent .left{
+  .about .aboutcontent .left {
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
   }
-  .about .aboutcontent .right{
+  .about .aboutcontent .right {
     flex: 100%;
   }
-  .services .servcontent .card{
+  .services .servcontent .card {
     width: calc(44% - 8px);
     margin: 20px;
   }
@@ -889,17 +901,17 @@ footer span a:hover{
     width: 100%;
   } */
 }
-@media(max-width:600px){
-  .maxwidth{
+@media (max-width: 600px) {
+  .maxwidth {
     padding: 0 23px;
   }
-  .home .homecontent .text1{
+  .home .homecontent .text1 {
     font-size: 50px;
   }
-  .home .homecontent .text2{
+  .home .homecontent .text2 {
     font-size: 27px;
   }
-  .services .servcontent .card{
+  .services .servcontent .card {
     width: 100%;
   }
   /* .broker .brokercontent .column{
@@ -907,57 +919,56 @@ footer span a:hover{
   } */
 }
 
-@media(max-width:721px){
-  .broker .brokercontent .column, .contact .contactcontent .column{
+@media (max-width: 721px) {
+  .broker .brokercontent .column,
+  .contact .contactcontent .column {
     width: 100%;
     margin-bottom: 35px;
   }
-  .broker .brokercontent .right{
+  .broker .brokercontent .right {
     margin-top: 20px;
   }
 }
 
-@media(max-width:811px){
-  .tutorial .tutorialcontent .column, .signal .signalcontent .column{
+@media (max-width: 811px) {
+  .tutorial .tutorialcontent .column,
+  .signal .signalcontent .column {
     width: 100%;
   }
 }
 
-@media(max-width:418px){
-
-  .navbarr .logo p{
+@media (max-width: 418px) {
+  .navbarr .logo p {
     font-size: 30px;
   }
 
-  .navbarr .maxwidth .menu li a{
+  .navbarr .maxwidth .menu li a {
     font-size: 16px;
   }
 
-  .text3 .span{
+  .text3 .span {
     font-size: 42px;
   }
 
-  .text3{
+  .text3 {
     font-size: 42px;
   }
 
-  .text3 .aspan2{
+  .text3 .aspan2 {
     font-size: 16px;
   }
 
-  .gbp{
+  .gbp {
     height: 298px;
     width: 280px;
     margin: none;
   }
-
 }
-
 
 /* other styling */
 
-.account{
-  color:  #d12e57;
+.account {
+  color: #d12e57;
   cursor: copy;
   font-weight: 700;
 }
