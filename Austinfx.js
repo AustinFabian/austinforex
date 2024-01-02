@@ -57,4 +57,7 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
+
+  // for copy-right
+  $(".copyright").html(`<i class="far fa-copyright"></i> ${new Date().getFullYear()} All Right Reserved.`)
 });

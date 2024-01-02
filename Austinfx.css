@@ -101,9 +101,10 @@ html {
   color: #fff;
   min-height: 500px;
   font-family: "Ubuntu", sans-serif;
-  background-image: url(media/IMG_1212.jpg);
+  background: url(media/IMG_1040.jpeg);
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .home .maxwidth {
